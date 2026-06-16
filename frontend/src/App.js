@@ -1,17 +1,17 @@
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
 } from "react-router-dom";
 
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
+import LinkExpired from "./pages/LinkExpired";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route
           path="/"
           element={<ForgotPassword />}
@@ -27,6 +27,10 @@ function App() {
           element={<ResetPassword />}
         />
 
+        <Route
+          path="/link-expired"
+          element={<LinkExpired />}
+        />
       </Routes>
     </BrowserRouter>
   );
