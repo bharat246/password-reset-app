@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/auth";
+  "https://password-reset-app-ft2r.onrender.com/api/auth";
 
 export const forgotPassword = (email) =>
   axios.post(`${API}/forgot-password`, {
