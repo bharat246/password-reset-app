@@ -15,6 +15,10 @@ app.use(express.json());
 
 app.use("/api/auth", require("./routes/authRoutes"));
 
+app.get("/", (req, res) => {
+  res.send("Password Reset API is Running 🚀");
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
